@@ -4,7 +4,7 @@ class Solution {
         int maxProfit = 0;
         int minStart = prices[0];
 
-        for(int i=0;i<n;i++){
+        for(int i=1;i<n;i++){
             minStart = Math.min(minStart,prices[i]) ;
 
             int profit = prices[i] - minStart ;
