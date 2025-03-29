@@ -4,10 +4,10 @@ class Solution {
         int maxProfit = 0;
         int minStart = prices[0];
 
-        for(int i=1;i<n;i++){
-            minStart = Math.min(minStart,prices[i]) ;
+        for(int  price : prices){
+            minStart = Math.min(minStart,price) ;
         
-            maxProfit = Math.max(maxProfit , prices[i] - minStart ) ;
+            maxProfit = Math.max(maxProfit , price - minStart ) ;
         }
          return maxProfit ;
         
