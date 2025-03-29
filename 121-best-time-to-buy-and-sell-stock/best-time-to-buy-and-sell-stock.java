@@ -6,11 +6,8 @@ class Solution {
 
         for(int i=1;i<n;i++){
             minStart = Math.min(minStart,prices[i]) ;
-
-            int profit = prices[i] - minStart ;
         
-            
-            maxProfit = Math.max(maxProfit , profit ) ;
+            maxProfit = Math.max(maxProfit , prices[i] - minStart ) ;
         }
          return maxProfit ;
         
