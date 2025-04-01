@@ -9,11 +9,12 @@ class Solution {
         int maxSum = KadanesMax( nums , n ) ;
         int circularMaxSum = SUM - minSum ;
         
-        if(maxSum > 0 ) {
-            return Math.max(maxSum, circularMaxSum);
+        if (circularMaxSum == 0) {
+            return maxSum;
         }
         
-        return maxSum ;
+        
+        return Math.max(maxSum, circularMaxSum);
     }
     
     
